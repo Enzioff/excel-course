@@ -1,0 +1,1 @@
+(()=>{"use strict";setTimeout((function(){document.body.innerHTML="<h1>".concat("Hello ".concat("Рома"),"</h1>")}),2e3)})();
