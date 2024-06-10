@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    // куда собираем, но т.к используем webpack эта строчка не важна
+    "outDir": "./dist/",
+    // Не даёт использовать переменные без явного указания типа
+    "noImplicitAny": true,
+    // Модульная система
+    "module": "ESNext",
+    // В какой стандарт экспортируем при сборке
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+    // позволяет работать с пакетами, которые используют
+    // common js, как с обычными пакетами с помощью import
+    // (require() module.export) = common JS
+    "esModuleInterop": true,
+    // позволяет использовать export default
+    // дабы при импорте не писать import * as webpack from 'webpack'
+    // а просто import webpack from 'webpack'
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+  },
+  "exclude": [
+    "node_modules"
+  ],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
